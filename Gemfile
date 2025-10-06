@@ -11,4 +11,4 @@ gem "jekyll-sitemap", group: :jekyll_plugins
 
 gem "html-proofer", "~> 5.0", :group => :development
 
-gem "jekyll-remote-theme", "~> 0.4.1"
+gem "jekyll-remote-theme", "~> 0.4.3"
