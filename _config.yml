@@ -98,13 +98,14 @@ mermaid:
 # Enable or disable heading anchors
 heading_anchors: true
 
-# Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "https://github.com/just-the-docs/just-the-docs"
+# # Aux links for the upper right navigation
+# # Uncomment if you want to have the aux links (right side of the top nav bar)
+# aux_links:
+#   "Just the Docs on GitHub":
+#     - "https://github.com/just-the-docs/just-the-docs"
 
-# Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+# # Makes Aux links open in a new tab. Default is false
+# aux_links_new_tab: false
 
 # Enable or disable the side/mobile menu globally
 # Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
