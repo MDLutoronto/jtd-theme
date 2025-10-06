@@ -9,6 +9,7 @@ nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
 nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
 nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
 
+
 permalink: pretty
 
 defaults:
@@ -160,6 +161,9 @@ last_edit_timestamp: false # Keep this be `false`, since it's set inside the foo
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: mdl
 
+# Remote theme
+remote_theme: "MDLutoronto/jtd-theme"
+
 callouts_level: quiet # or loud
 callouts:
   highlight:
@@ -189,7 +193,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   # - jekyll-toc
-  # - jekyll-remote-theme
+  - jekyll-remote-theme
 
 kramdown:
   syntax_highlighter_opts:
