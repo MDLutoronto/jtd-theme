@@ -133,7 +133,16 @@ liquid:
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: 'Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href="https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt">MIT license.</a> <a href="https://www.netlify.com/">This site is powered by Netlify.</a>'
+# Custom footer content (HTML is allowed)
+# If left empty, a default credit line will be used
+# footer_content: '<small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>'
+
+## License information
+##  If left empty, a default Creative Commons Attribution-ShareAlike 4.0 International license will be used
+license_name: "Creative Commons Attribution-ShareAlike 4.0 International"
+license_url: "https://creativecommons.org/licenses/by-nd/4.0/deed.en" # link to the license
+license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" # image Link or image file path for the license
+
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter

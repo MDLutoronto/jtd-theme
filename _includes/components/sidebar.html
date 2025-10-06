@@ -74,11 +74,6 @@
   {% else %}
     <footer class="site-footer">
       <div class="text-small text-grey-dk-300 mb-4" style="display:grid; justify-items:center; row-gap:5px">
-        {% if site.license_image_url != nil %}
-        <a href=" {{site.license_url}} ">
-          <img alt="{{ site.license_name }}" style="border-width:0" src="{{ site.license_image_url }}" /><br/>
-        </a>
-        {% endif %}
         {% if site.nav_footer_logo_top != '' %}
           {% if site.nav_footer_logo_top_href == '' %}
             <img width="50%" align="center" alt="Top Logo" src="{{ site.nav_footer_logo_top }}"> <br>
