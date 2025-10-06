@@ -1,8 +1,13 @@
 title: 'Map & Data Library'
 description: The customized just-the-docs remote theme for Map & Data Library, University of Toronto
 # baseurl: "" # the subpath of your site, e.g. /blog
-url: https://MDLutoronto.github.io/jtd-theme  # change the slug to the repo's name ('jtd-remote-theme' in this case)
+url: https://MDLutoronto.github.io/jtd-theme  # change the slug to the repo's name ('jtd-theme' in this case)
 repository: MDLutoronto/jtd-theme # for github-metadata
+
+nav_footer_logo_bottom: "/assets/images/UTL.png"
+nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
+nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
+nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
 
 permalink: pretty
 
