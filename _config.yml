@@ -145,8 +145,8 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 
 
 # Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+last_edit_timestamp: false # Keep this be `false`, since it's set inside the footer_custom.html ; use `last_modified_date` in the page's front matter instead
+
 
 # # Footer "Edit this page on GitHub" link text
 # gh_edit_link: true # show or hide edit this page link
