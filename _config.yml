@@ -162,7 +162,7 @@ last_edit_timestamp: false # Keep this be `false`, since it's set inside the foo
 color_scheme: mdl
 
 # # Remote theme
-# remote_theme: "MDLutoronto/jtd-theme"
+remote_theme: "MDLutoronto/jtd-theme"
 
 # #  Workshop series name to be displayed in the footer (optional)
 workshop_series_name: "Map & Data Library Workshop Series" 
