@@ -1,3 +1,16 @@
 {%- if site.footer_content -%}
   <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
+{%- else -%}
+  <small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>
+  {%- endif -%}
+{%- if site.license_name and site.license_url and site.license_image_url -%}
+<a target="_blank" rel="noopener noreferrer" href="{{ site.license_url }}"><img src="{{ site.license_image_url }}" alt="{{ site.license_name }} icon" style="height:2em;"></a>
+{%- else -%}
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="/assets/images/by-sa.svg" alt="Creative Commons Attribution-ShareAlike 4.0 International icon" style="height:2em;"></a>
+  {%- endif -%}
+{%- if page.created_date and page.created_date != '' -%}
+  <p class="text-small text-grey-dk-100 mb-0">Page created: {{ page.created_date | date: "%B %d, %Y" }}</p>
+{%- endif -%}
+{%- if page.last_modified_date and page.last_modified_date != '' -%}
+  <p class="text-small text-grey-dk-100 mb-0">Last updated: {{ page.last_modified_date | date: "%B %d, %Y" }}</p>
 {%- endif -%}
