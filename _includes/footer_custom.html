@@ -9,11 +9,11 @@
       {%- if page.staff_link -%}
         <a href="{{ page.staff_link }}">{{ page.staff_name }}</a>
       {%- else -%}
-        {{ page.staff_name }}
+        {{ page.staff_name }}.
       {%- endif -%}
     {%- endif -%}
     {%- if page.student_staff_name -%}
-      ; Edited for online use and online pages created by&nbsp;
+      &nbsp;With contributions by&nbsp;
       {%- if page.student_staff_link -%}
         <a href="{{ page.student_staff_link }}">{{ page.student_staff_name }}</a>
       {%- else -%}
@@ -23,7 +23,6 @@
     .
   </p>
 {%- endif -%}
-<br>
 {%- if site.license_name and site.license_url and site.license_image_url -%}
 <a target="_blank" rel="noopener noreferrer" href="{{ site.license_url }}"><img src="{{ site.license_image_url }}" alt="{{ site.license_name }} icon" style="height:2em;"></a>
 {%- else -%}
