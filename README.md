@@ -1,7 +1,6 @@
 # Map and Data Library JTD Theme
 This is a customized version of the [Just the Docs](https://just-the-docs.com) theme for the [Map and Data Library](https://mdl.library.utoronto.ca) at the [University of Toronto Libraries](https://www.library.utoronto.ca).
 
-
 # Using the template
 This repository is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that you can use to create your own documentation site using the [Just the Docs](https://just-the-docs.com) theme.
 
@@ -90,3 +89,20 @@ student_name: Jane Doe
 student_link: https://library.utoronto.ca/staff/jane-doe
 ```
 This will display `Tutorial created by Jane Doe` in the footer of the page, with `Jane Doe` being a link to the specified URL. If no link is provided, the name will be displayed as plain text.
+
+# Development
+To test the theme locally, you need to have [Ruby](https://www.ruby-lang
+.org/en/documentation/installation/) and [Bundler](https://bundler.io) installed.
+1. Clone the repository:
+```bash
+git clone https://github.com/MDLutoronto/jtd-theme.git
+```
+2. Navigate to the repository directory:
+```bash
+cd jtd-theme
+```
+3. Install the dependencies and serve the site with live reload:
+```bash
+bundle install && bundle exec jekyll serve --livereload
+```
+4. Open your web browser and go to `http://localhost:4000` to view the site.
