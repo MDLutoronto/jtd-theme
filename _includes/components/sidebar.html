@@ -77,26 +77,26 @@
         {% if site.nav_footer_logo_top and site.nav_footer_logo_top != '' %}
           {% if site.nav_footer_logo_top_href and site.nav_footer_logo_top_href != '' %}
             <a href="{{ site.nav_footer_logo_top_href }}" a target="_blank" rel="noopener noreferrer" style="text-align:center;">
-              <img width="50%" align="center" alt="Top Logo" src="{{ site.nav_footer_logo_top }}">
+              <img width="50%" align="center" alt="Top Logo" src="{{ site.nav_footer_logo_top | relative_url }}">
             </a>
           {% else %}
-            <img width="50%" align="center" alt="Top Logo" src="{{ site.nav_footer_logo_top }}"> <br>
+            <img width="50%" align="center" alt="Top Logo" src="{{ site.nav_footer_logo_top | relative_url }}">
           {% endif %}
         {%- else -%}
         <a href="https://mdl.library.utoronto.ca/" a target="_blank" rel="noopener noreferrer" style="text-align:center;">
-        <img width="50%" align="center" alt="Top Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/mdl_full_logo.png"></a>
+        <img width="50%" align="center" alt="Map & Data Library Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/mdl_full_logo.png"></a>
         {% endif %}
         {% if site.nav_footer_logo_bottom and site.nav_footer_logo_bottom != '' %}
           {% if site.nav_footer_logo_bottom_href and site.nav_footer_logo_bottom_href != '' %}
             <a href="{{ site.nav_footer_logo_bottom_href }}" a target="_blank" rel="noopener noreferrer" style="text-align:center;">
-              <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom }}">
+              <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom | relative_url }}">
             </a>
           {% else %}
-            <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom }}">
+            <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="Bottom Logo" src="{{ site.nav_footer_logo_bottom | relative_url }}">
           {% endif %}
           {% else %}
             <a href="https://library.utoronto.ca/" a target="_blank" rel="noopener noreferrer" style="text-align:center;">
-            <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="Bottom Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/UTL.png"></a>
+            <img width="100%" style="padding-bottom:15px; padding-top:10px;" align="center" alt="University of Toronto Libraries Logo" src="https://raw.githubusercontent.com/MDLutoronto/jtd-theme/refs/heads/main/assets/images/UTL.png"></a>
         {% endif %}
       </div>
     </footer>
