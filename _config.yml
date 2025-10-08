@@ -1,14 +1,37 @@
-title: 'Map & Data Library'
-description: The customized just-the-docs remote theme for Map & Data Library, University of Toronto
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: https://MDLutoronto.github.io/jtd-theme  # change the slug to the repo's name ('jtd-theme' in this case)
-repository: MDLutoronto/jtd-theme # for github-metadata
+## Site settings
+title: "Map & Data Library just the Docs Theme"
+description: "Workshops and guides from the Map & Data Library, University of Toronto"
+url: "https://MDLutoronto.github.io/jtd-theme"  # change the slug to the repo's name ('jtd-theme' in this case)
+repository: "MDLutoronto/jtd-theme" # for github-metadata
 
+## Navigation footer logos and links
+## Change it only if you want to use different logos or links
+## Logos should be placed in the /assets/images/ directory, or you can use an external image link
 nav_footer_logo_bottom: "/assets/images/UTL.png"
 nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
 nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
 nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
 
+
+## License information
+##  If left empty, a default Creative Commons Attribution-ShareAlike 4.0 International license will be used
+license_name: "Creative Commons Attribution-ShareAlike 4.0 International"
+license_url: "https://creativecommons.org/licenses/by-nd/4.0/deed.en" # link to the license
+license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" # image Link or image file path for the license
+
+## Workshop series name to be displayed in the footer (optional)
+workshop_series_name: "Map & Data Library Workshop Series" 
+
+## Custom footer content (HTML is allowed)
+## If left empty, a default credit line will be used
+# footer_content: '<small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>'
+
+#################################################
+# 🚨 DANGER ZONE 🚨
+# ONLY CHANGE BELOW THIS LINE IF YOU KNOW WHAT YOU ARE DOING
+#################################################
+
+# baseurl: "" # the subpath of your site, e.g. /blog
 
 permalink: pretty
 
@@ -118,8 +141,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: Just the Docs on GitHub
-    url: https://github.com/just-the-docs/just-the-docs
+  - title: Map & Data Library
+    url: https://mdl.library.utoronto.ca/
 
 # Show navigation error report
 nav_error_report: true # default is false/nil.
@@ -134,17 +157,6 @@ liquid:
 # Back to top link
 back_to_top: true
 back_to_top_text: "Back to top"
-
-# Custom footer content (HTML is allowed)
-# If left empty, a default credit line will be used
-# footer_content: '<small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>'
-
-## License information
-##  If left empty, a default Creative Commons Attribution-ShareAlike 4.0 International license will be used
-license_name: "Creative Commons Attribution-ShareAlike 4.0 International"
-license_url: "https://creativecommons.org/licenses/by-nd/4.0/deed.en" # link to the license
-license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" # image Link or image file path for the license
-
 
 # Footer last edited timestamp
 last_edit_timestamp: false # Keep this be `false`, since it's set inside the footer_custom.html ; use `last_modified_date` in the page's front matter instead
@@ -161,11 +173,8 @@ last_edit_timestamp: false # Keep this be `false`, since it's set inside the foo
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: mdl
 
-# # Remote theme
+# Remote theme
 remote_theme: "MDLutoronto/jtd-theme"
-
-# #  Workshop series name to be displayed in the footer (optional)
-workshop_series_name: "Map & Data Library Workshop Series" 
 
 callouts_level: quiet # or loud
 callouts:
