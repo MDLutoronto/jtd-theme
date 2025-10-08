@@ -20,7 +20,7 @@ license_url: "https://creativecommons.org/licenses/by-nd/4.0/deed.en" # link to 
 license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" # image Link or image file path for the license
 
 ## Workshop series name to be displayed in the footer (optional)
-workshop_series_name: "Map & Data Library Workshop Series" 
+# workshop_series_name: "Map & Data Library Workshop Series"
 
 ## Custom footer content (HTML is allowed)
 ## If left empty, a default credit line will be used
