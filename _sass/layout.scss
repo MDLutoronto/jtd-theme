@@ -207,6 +207,7 @@ body {
   padding-top: $sp-4;
   padding-bottom: $sp-4;
   color: $grey-dk-000;
+  display: none; // Hide on mobile
 
   @include container;
 
@@ -215,6 +216,7 @@ body {
   @include mq(md) {
     position: static;
     justify-self: end;
+    display: block; // Show on desktop
   }
 }
 
