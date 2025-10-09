@@ -1,10 +1,8 @@
 ---
-title: Home
-layout: home
-nav_order: 1
+title: children
+layout: default
+nav_order: 2
 description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
-permalink: /
 last_modified_date: 2025-10-06
-has_children: true
+parent: Home
 ---
-This is the Home page!
