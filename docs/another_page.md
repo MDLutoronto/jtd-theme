@@ -9,4 +9,4 @@ parent: Home
 Hello world!
 
 The following is an image included in the `assets/images` folder.
-<br><img src="assets/images/UTL.png" alt="UTL logo" width="200"/>
+<br><img src="/assets/images/UTL.png" alt="UTL logo" width="200"/>
