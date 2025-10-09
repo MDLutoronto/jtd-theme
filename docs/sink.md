@@ -322,3 +322,7 @@ This is content inside a `<details>` dropdown.
 - [ ] Milk
 
 </details>
+
+# Images
+This is how to include images that is part of the repository.
+<img src="/assets/images/UTL.png" alt="UTL" style="width:200px;"/>
