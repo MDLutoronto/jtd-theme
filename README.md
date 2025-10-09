@@ -91,8 +91,8 @@ student_link: https://library.utoronto.ca/staff/jane-doe
 This will display `Tutorial created by Jane Doe` in the footer of the page, with `Jane Doe` being a link to the specified URL. If no link is provided, the name will be displayed as plain text.
 
 # Development
-To test the theme locally, you need to have [Ruby](https://www.ruby-lang
-.org/en/documentation/installation/) and [Bundler](https://bundler.io) installed.
+## Testing the theme locally
+To test the theme locally, you need to have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Bundler](https://bundler.io) installed.
 1. Clone the repository:
 ```bash
 git clone https://github.com/MDLutoronto/jtd-theme.git
@@ -106,3 +106,17 @@ cd jtd-theme
 bundle install && bundle exec jekyll serve --livereload
 ```
 4. Open your web browser and go to `http://localhost:4000` to view the site.
+
+## Deployment bug fix
+If the deployment keeps looping the following messages:
+```bash
+...
+Current status: deployment_queued
+Getting Pages deployment status...
+...
+```
+You can try to fix it by the following steps:
+1. Cancel the current deployment if it's still in progress.
+2. Go to the repository's **Settings** > **Pages**. Find the `Source` under the **Build and deployment** section, change it to `Deploy from a branch`
+3. Wait for a few seconds, then change it back to `GitHub Actions`.
+4. Retrigger the deployment by pushing a new commit, or re-running the workflow under the **Actions** > **Deploy Jekyll site to Pages**.
