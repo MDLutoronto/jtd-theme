@@ -46,5 +46,30 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
+
+  <!-- {% if site.back_to_top %} -->
+    <a href="#top" id="back-to-top" aria-label="{{ site.back_to_top_text | default: 'Back to top' }}"></a>
+    <script>
+      // Show/hide back to top button based on scroll position
+      const backToTopButton = document.getElementById('back-to-top');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('show');
+        } else {
+          backToTopButton.classList.remove('show');
+        }
+      });
+
+      // Smooth scroll to top
+      backToTopButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+  <!-- {% endif %} -->
 </body>
 </html>
