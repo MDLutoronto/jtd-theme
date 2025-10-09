@@ -1,6 +1,6 @@
 ---
 title: children 2
-layout: default
+layout: page
 nav_order: 2
 description: 
 last_modified_date: 2025-10-06
