@@ -324,5 +324,5 @@ This is content inside a `<details>` dropdown.
 </details>
 
 # Images
-This is how to include images that is part of the repository.
-<img src="/assets/images/UTL.png" alt="UTL" style="width:200px;"/>
+This is how to include images that is part of the repository. The "relative_url" filter is recommended to ensure the correct path is used regardless of whether the site is served from the root or a subpath.
+<img src="{{ '/assets/images/UTL.png' | relative_url }}" alt="UTL" style="width:200px;"/>
