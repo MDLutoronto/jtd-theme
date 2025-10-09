@@ -115,7 +115,11 @@ Current status: deployment_queued
 Getting Pages deployment status...
 ...
 ```
-You can try to fix it by the following steps:
+### Unpublishing and republishing the site
+A way to fix is is to go to the repository's **Settings** > **Pages**, unpublish the site by clicking the **Unpublish site** button, then republish it by clicking the **Save** button.
+
+### Changing the source temporarily
+Another way to fix it is to try the following steps:
 1. Cancel the current deployment if it's still in progress.
 2. Go to the repository's **Settings** > **Pages**. Find the `Source` under the **Build and deployment** section, change it to `Deploy from a branch`
 3. Wait for a few seconds, then change it back to `GitHub Actions`.
