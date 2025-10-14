@@ -39,7 +39,7 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 # ONLY CHANGE BELOW THIS LINE IF YOU KNOW WHAT YOU ARE DOING
 #################################################
 
-baseurl: "learn" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
