@@ -324,5 +324,40 @@ This is content inside a `<details>` dropdown.
 </details>
 
 # Images
-This is how to include images that is part of the repository. The "relative_url" filter is recommended to ensure the correct path is used regardless of whether the site is served from the root or a subpath.
+This is how to include images that is part of the repository. The "relative_url" filter is required to ensure the correct path is used regardless of whether the site is served from the root or a subpath.
+
+This is the code to include the image, if you put the image in the `assets/images` folder:
+```html
 <img src="{{ '/assets/images/UTL.png' | relative_url }}" alt="UTL" style="width:200px;"/>
+```
+<img src="{{ '/assets/images/UTL.png' | relative_url }}" alt="UTL" style="width:200px;"/>
+
+# Embed videos (iframe)
+
+You can embed videos using an `<iframe>`. Replace the `LINK_TO_THE_VIDEO` with the actual video URL. 
+
+You can also use the share button at MyMedia to get the embed code. The code looks like this: 
+```html
+<iframe width="560" height="315" src="LINK_TO_THE_VIDEO" frameborder="0" allowfullscreen> iframe not supported </iframe>
+```
+It is recommended to set the width to `100%` and use `style="aspect-ratio: 16/9; max-width: 740px;"` to ensure the video scales properly on different screen sizes. Modify the code as follows:
+```html
+<iframe
+  width="100%"
+  style="aspect-ratio: 16/9; max-width: 740px;"
+  src="LINK_TO_THE_VIDEO"
+  frameborder="0"
+  allowfullscreen>
+  iframe not supported
+</iframe>
+```
+
+Here is an example of embedding a MyMedia video:
+<iframe
+  width="100%" 
+  style="aspect-ratio: 16/9; max-width: 740px;"
+  src="https://play.library.utoronto.ca/embed/b38ebfc6c8a6ac0da313b628e0300c05" 
+  frameborder="0" 
+  allowfullscreen>
+  iframe not supported
+</iframe>
