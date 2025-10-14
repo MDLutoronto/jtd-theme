@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    just-the-docs (0.10.1)
+    mdlutoronto-jtd-theme (0.1.0)
       jekyll (>= 3.8.5)
       jekyll-include-cache
       jekyll-seo-tag (>= 2.0)
@@ -185,7 +185,7 @@ DEPENDENCIES
   jekyll-include-cache
   jekyll-remote-theme (~> 0.4.3)
   jekyll-sitemap
-  just-the-docs!
+  mdlutoronto-jtd-theme!
 
 BUNDLED WITH
    2.5.9
