@@ -34,7 +34,7 @@ workshop_series_name: "NAME OF YOUR WORKSHOP SERIES"
 This will display `This workshop is part of the {{NAME OF YOUR WORKSHOP SERIES}}` in the footer of each page.
 
 ### License (optional)
-By default, the theme displays a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license icon in the footer of each page, linking to the [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).
+By default, the theme displays a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license icon in the footer of each page, linking to the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 You can set the following options to display license information in the footer of the site that applies to all pages:
 
@@ -44,13 +44,13 @@ license_name: "CC BY 4.0"
 ```
 - license_url: Set this to the URL of the license. For example:
 ```yaml
-license_url: "https://creativecommons.org/licenses/by/4.0/"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 ```
 - license_image_url: Set this to the URL of the license image you want to display. For example:
 ```yaml
-license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg"
+license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg"
 ```
-<a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="Creative Commons Attribution-ShareAlike 4.0 International icon" style="height:2em;"></a>
+<a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International icon" style="height:2em;"></a>
 
 ## Page options
 You can set the following options in the front matter of your pages to customize the footer information:
