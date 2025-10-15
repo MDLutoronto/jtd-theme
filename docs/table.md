@@ -6,8 +6,12 @@ description: How to render tables from CSV files in Jekyll
 last_modified_date: 2025-10-14
 parent: Home
 ---
+# Table of Contents
+{: .no_toc }
+1. Table of Contents
+{:toc}
 
-# Data from CSV
+# Data from CSV 
 
 You can create tables from CSV files stored in the `_data` folder of your Jekyll site.
 
@@ -110,6 +114,37 @@ To use a different CSV file (e.g., `_data/another_data.csv`), simply change the 
   </thead>
   <tbody>
     {% for row in another_data %}
+      <tr>
+        {% for cell in row %}
+          <td>{{ cell[1] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+## Table with no header
+If your CSV file does not have a header row, you can skip the header section in the table:
+
+```liquid
+{% raw %}<table>
+  <tbody>
+    {% for row in csv_data %}
+      <tr>
+        {% for cell in row %}
+          <td>{{ cell[1] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>{% endraw %}
+```
+### Output from no_header_data.csv
+
+{% assign no_header_data = site.data.csv_data %}
+<table>
+  <tbody>
+    {% for row in no_header_data %}
       <tr>
         {% for cell in row %}
           <td>{{ cell[1] }}</td>
