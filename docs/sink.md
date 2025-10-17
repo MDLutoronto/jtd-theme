@@ -4,7 +4,12 @@ layout: page
 nav_order: 2
 description: 
 last_modified_date: 2025-10-06
+created_date: 2024-10-01
 parent: Home
+staff_name: Ken Lui
+staff_link: https://example.com/ken-lui
+student_staff_name: Jane Doe
+student_staff_link: https://example.com/jane-doe
 ---
 This is the Sink page!
 ---
