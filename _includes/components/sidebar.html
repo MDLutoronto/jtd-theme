@@ -1,7 +1,12 @@
 <div class="side-bar">
   <!-- This div controls the title of the site. -->
   <div class="site-header" id="site-header">
-    <a id="title-link" href="{{ '/' | relative_url }}" class="site-title lh-tight" style="width:100%">
+    {% if site.title_link %}
+    <a id="title-link" href="{{ site.title_link | absolute_url }}" class="site-title lh-tight" style="width:100%">
+    {% else %}
+    <a id="title-link" href="{{ '/' | absolute_url }}" class="site-title
+  lh-tight" style="width:100%">
+    {% endif %}
       <div id="title-text">{% include title.html %}</div>
     </a>
     <a href="#" id="menu-button" class="site-button" aria-label="navigation menu">

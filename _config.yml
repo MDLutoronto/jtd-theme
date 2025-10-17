@@ -41,6 +41,9 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
+# Link for the site title in the sidebar; set to "/" for homepage
+title_link: "https://mdlutoronto.github.io/tutorials-search/" 
+
 # # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
