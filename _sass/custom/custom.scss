@@ -1,5 +1,13 @@
 // custom SCSS (or CSS) goes here
 
+// Navigation list divider (horizontal line between sections)
+.nav-list-divider {
+  margin: 0.5rem 2.1rem;
+  border: 0;
+  opacity: 0%;
+  border-top: 0.5px solid $border-color;
+}
+
 // Floating back to top button
 #back-to-top {
   position: fixed;

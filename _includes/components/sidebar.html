@@ -33,6 +33,7 @@
       {% include nav.html pages=site.html_pages key=nil %}
     {% endif %}
     {%- if site.nav_external_links -%}
+      <hr class="nav-list-divider">
       <ul class="nav-list">
         {%- for node in site.nav_external_links -%}
           <li class="nav-list-item external">
