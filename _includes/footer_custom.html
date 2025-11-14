@@ -1,8 +1,8 @@
 {%- if site.footer_content -%}
   <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
 {%- else -%}
-{%- if page.created_date and page.created_date != '' -%}First created: {{ page.created_date | date: "%B %d, %Y" }}{% endif -%}
-<br>Last updated: {{ page.last_modified_date | default: site.ci_last_modified_date | date: "%B %d, %Y"}}
+{%- if page.created_date and page.created_date != '' -%}First created: {{ page.created_date | date: "%B %d, %Y" }} <br> {% endif -%}
+Last updated: {{ page.last_modified_date | default: site.ci_last_modified_date | date: "%B %d, %Y"}}
 {%- if site.workshop_series_name and site.workshop_series_name != '' -%}
   <p class="text-small text-grey-dk-100 mb-0"> This workshop is part of the {{ site.workshop_series_name }}</p>
 {%- endif -%}
