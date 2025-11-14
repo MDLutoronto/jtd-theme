@@ -1,8 +1,9 @@
 {
-  "id": 8997843,
+  "id": 9967948,
   "name": "ci",
   "target": "branch",
   "source_type": "Repository",
+  "source": "MDLutoronto/jtd-theme",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
@@ -20,7 +21,7 @@
         "do_not_enforce_on_create": false,
         "required_status_checks": [
           {
-            "context": "CI Pipeline for Pull Requests",
+            "context": "Update ci_last_modified_date in _config.yml",
             "integration_id": 15368
           }
         ]
