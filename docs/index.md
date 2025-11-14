@@ -4,7 +4,8 @@ layout: home
 nav_order: 1
 description: 
 permalink: /
-last_modified_date: 2025-10-06
+created_date:
+# last_modified_date: # Only use it when you want to override the auto-updated date.
 has_children: true
 ---
 
