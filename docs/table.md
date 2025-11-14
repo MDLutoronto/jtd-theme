@@ -3,7 +3,8 @@ title: Rendering Tables from CSV
 layout: page
 nav_order: 2
 description: How to render tables from CSV files in Jekyll
-last_modified_date: 2025-10-14
+created_date:
+# last_modified_date: # Only use it when you want to override the auto-updated date.
 parent: Home
 ---
 # Table of Contents

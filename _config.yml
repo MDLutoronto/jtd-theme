@@ -1,7 +1,7 @@
 ## Site settings
 title: "Map & Data Library just the Docs Theme"
 description: "Workshops and guides from the Map & Data Library, University of Toronto"
-url: "https://MDLutoronto.github.io/jtd-theme"  # change the slug to the repo's name ('jtd-theme' in this case)
+url: "https://MDLutoronto.github.io/jtd-theme" # change the slug to the repo's name ('jtd-theme' in this case)
 repository: "MDLutoronto/jtd-theme" # for github-metadata
 
 ## Navigation footer logos and links
@@ -11,7 +11,6 @@ nav_footer_logo_bottom: "/assets/images/UTL.png"
 nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
 nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
 nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
-
 
 ## License information
 ##  If left empty, a default Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license will be used
@@ -24,8 +23,8 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 # aux_links:
 #   "Map & Data Library":
 #     - "https://mdl.library.utoronto.ca/"
-  # "U of T Libraries":
-  #   - "https://library.utoronto.ca/"
+# "U of T Libraries":
+#   - "https://library.utoronto.ca/"
 
 ## Workshop series name to be displayed in the footer (optional)
 # workshop_series_name: "Map & Data Library Workshop Series"
@@ -42,7 +41,7 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Link for the site title in the sidebar; set to "/" for homepage
-title_link: "https://mdlutoronto.github.io/tutorials-search/" 
+title_link: "https://mdlutoronto.github.io/tutorials-search/"
 
 # # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -160,7 +159,6 @@ nav_enabled: true
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
-
 # Show navigation error report
 nav_error_report: true # default is false/nil.
 
@@ -177,7 +175,6 @@ back_to_top_text: "Back to top"
 
 # Footer last edited timestamp
 last_edit_timestamp: false # Keep this be `false`, since it's set inside the footer_custom.html ; use `last_modified_date` in the page's front matter instead
-
 
 # # Footer "Edit this page on GitHub" link text
 # gh_edit_link: true # show or hide edit this page link
@@ -235,4 +232,6 @@ compress_html:
 
 sass:
   quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
-  silence_deprecations: ['import'] # https://github.com/just-the-docs/just-the-docs/issues/1607
+  silence_deprecations: ["import"] # https://github.com/just-the-docs/just-the-docs/issues/1607
+
+ci_last_modified_date: "" # automatically updated by GitHub Actions workflow ci_pr.yml. The format is 'YYYY-MM-DD'.
