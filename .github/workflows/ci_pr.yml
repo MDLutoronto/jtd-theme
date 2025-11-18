@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   # Auto-generate date job to update _config.yml
-  auto-gen-date:
+  update-ci-last-modified-date:
     name: Update ci_last_modified_date in _config.yml
     runs-on: ubuntu-latest
     permissions:
