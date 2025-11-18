@@ -1,11 +1,6 @@
 # Map and Data Library JTD Theme
 This is a customized version of the [Just the Docs](https://just-the-docs.com) theme for the [Map and Data Library](https://mdl.library.utoronto.ca) at the [University of Toronto Libraries](https://www.library.utoronto.ca).
 
-# Using the template
-This repository is a [GitHub template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) that you can use to create your own documentation site using the [Just the Docs](https://just-the-docs.com) theme.
-
-To create a new site using this template, click the green "Use this template" button above. This will create a new repository in your GitHub account with the contents of this repository.
-
 # Using as a remote theme
 You can use this repository as a remote theme, powered by the [jekyll-remote-theme plugin](https://github.com/benbalter/jekyll-remote-theme). 
 
@@ -22,73 +17,7 @@ Also, you need to install the `jekyll-remote-theme` (version 0.4.3) gem by addin
 gem "jekyll-remote-theme", "~> 0.4.3"
 ```
 
-# Configuration options
-## Site options
-You can set the following options in your site's `_config.yml` file to customize site-wide information:
-
-### Workshop series name (optional)
-- workshop_series_name: Set this to the name of your workshop series to have it displayed in that page. For example:
-```yaml
-workshop_series_name: "NAME OF YOUR WORKSHOP SERIES"
-```
-This will display `This workshop is part of the {{NAME OF YOUR WORKSHOP SERIES}}` in the footer of each page.
-
-### License (optional)
-By default, the theme displays a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license icon in the footer of each page, linking to the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-You can set the following options to display license information in the footer of the site that applies to all pages:
-
-- license_name: Set this to the name of the license. For example:
-```yaml
-license_name: "CC BY 4.0"
-```
-- license_url: Set this to the URL of the license. For example:
-```yaml
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-```
-- license_image_url: Set this to the URL of the license image you want to display. For example:
-```yaml
-license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg"
-```
-<a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International icon" style="height:2em;"></a>
-
-## Page options
-You can set the following options in the front matter of your pages to customize the footer information:
-
-### Dates
-- created_date: Set this to the date the page was created. For example:
-```yaml
-created_date: 2025-10-06
-```
-- last_modified_date: Set this to the date the page was last modified. For example:
-```yaml
-last_modified_date: 2025-10-07
-```
-This will display `Content created: October 06, 2025 | Last updated: October 07, 2025` in the footer of the page.
-
-If only one of these options is set, only that information will be displayed.
-
-### Staff information
-- staff_name: Set this to the name of the staff member who created the page. For example:
-```yaml
-staff_name: Ken Lui
-```
-- staff_link: Set this to the URL of the staff member's profile or website. For example:
-```yaml
-staff_link: https://library.utoronto.ca/staff/ken-lui
-```
-This will display `Tutorial created by Ken Lui` in the footer of the page, with `Ken Lui` being a link to the specified URL. If no link is provided, the name will be displayed as plain text.
-
-### Student staff information (optional)
-- student_name: Set this to the name of the student staff member who created the page. For example:
-```yaml
-student_name: Jane Doe
-```
-- student_link: Set this to the URL of the student staff member's profile or website. For example:
-```yaml
-student_link: https://library.utoronto.ca/staff/jane-doe
-```
-This will display `Tutorial created by Jane Doe` in the footer of the page, with `Jane Doe` being a link to the specified URL. If no link is provided, the name will be displayed as plain text.
+Every time you push changes to your repository, GitHub Pages will automatically fetch the latest version of the theme from this repository.
 
 # Development
 ## Testing the theme locally

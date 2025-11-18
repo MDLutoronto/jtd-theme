@@ -13,8 +13,8 @@ permissions:
 
 jobs:
   # Auto-generate date job to update _config.yml
-  auto-gen-date:
-    name: Update ci_last_modified_date in _config.yml
+  update-ci-last-modified-date:
+    name: Update ci_last_modified_date in _config
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -41,5 +41,5 @@ jobs:
       - name: Commit and Push
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }}"
+          commit_message: "ci: Auto-update date to ${{ steps.set_date.outputs.date }} [skip ci]"
           file_pattern: "_config.yml"

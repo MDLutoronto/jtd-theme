@@ -9,5 +9,4 @@ created_date:
 has_children: true
 ---
 
-# This is the Home page!
-This is the Home page!
+See the [README](https://github.com/MDLutoronto/jtd-theme/blob/main/README.md) for documentation about this theme.
