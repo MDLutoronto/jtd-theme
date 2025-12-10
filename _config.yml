@@ -25,6 +25,7 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 
 ## Workshop series name to be displayed in the footer (optional)
 # workshop_series_name: "Map & Data Library Workshop Series"
+# workshop_series_url: "https://mdl.library.utoronto.ca/workshops/"
 
 ## Custom footer content (HTML is allowed)
 ## If left empty, a default credit line will be used
