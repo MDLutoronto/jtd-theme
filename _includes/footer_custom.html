@@ -6,6 +6,18 @@ Last updated: {{ site.time | date: "%B %d, %Y"}}
 {%- if site.workshop_series_name and site.workshop_series_name != '' -%}
   <p class="text-small text-grey-dk-100 mb-0"> This workshop is part of the {% if site.workshop_series_url and site.workshop_series_url != '' -%}<a target="_blank" rel="noopener noreferrer" href="{{ site.workshop_series_url }}">{{ site.workshop_series_name }}</a>{%- else -%}{{ site.workshop_series_name }}{%- endif %}</p>
 {%- endif -%}
+{%- if page.maintainer -%}
+  <p class="text-small text-grey-dk-100 mb-0">Tutorial maintained by&nbsp;
+    {%- for person in page.maintainer -%}
+      {%- if person.link -%}
+        <a target="_blank" rel="noopener noreferrer" href="{{ person.link }}">{{ person.name }}</a>
+      {%- else -%}
+        {{ person.name }}
+      {%- endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor -%}.
+  </p>
+{%- endif -%}
 {%- if page.staff or page.student_staff -%}
   <p class="text-small text-grey-dk-100 mb-0">
     Tutorial created by&nbsp;

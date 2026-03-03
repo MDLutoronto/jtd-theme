@@ -16,6 +16,9 @@ student_staff:
   - name: Student One
     link: https://example.com/student1
   - name: Student Two
+maintainer:
+  - name: Ken Lui
+    link: https://example.com/ken
 has_children: False
 ---
 
