@@ -206,3 +206,5 @@ compress_html:
 sass:
   quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
   silence_deprecations: ["import"] # https://github.com/just-the-docs/just-the-docs/issues/1607
+
+navigation: true # Enable or disable the next/previous navigation buttons at the bottom of each page
