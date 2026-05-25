@@ -31,6 +31,8 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 ## If left empty, a default credit line will be used
 # footer_content: '<small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>'
 
+# navigation_buttons: false # Uncomment to disable the navigation buttons at the bottom of each page
+
 #################################################
 # 🚨 DANGER ZONE 🚨
 # ONLY CHANGE BELOW THIS LINE IF YOU KNOW WHAT YOU ARE DOING
@@ -206,5 +208,3 @@ compress_html:
 sass:
   quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
   silence_deprecations: ["import"] # https://github.com/just-the-docs/just-the-docs/issues/1607
-
-navigation: true # Enable or disable the next/previous navigation buttons at the bottom of each page
