@@ -35,6 +35,22 @@ layout: table_wrappers
           {% endif %}
 
         </main>
+        {% if site.navigation == true %}
+          {%- assign first_level_pages = site.html_pages
+              | where_exp: "item", "item.title != nil"
+              | where_exp: "item", "item.parent == nil"
+              | where_exp: "item", "item.nav_exclude != true" -%}
+          {%- assign second_level_pages = site.html_pages
+              | where_exp: "item", "item.title != nil"
+              | where_exp: "item", "item.parent != nil"
+              | where_exp: "item", "item.grand_parent == nil"
+              | where_exp: "item", "item.nav_exclude != true" -%}
+          {%- assign third_level_pages = site.html_pages
+              | where_exp: "item", "item.title != nil"
+              | where_exp: "item", "item.grand_parent != nil"
+              | where_exp: "item", "item.nav_exclude != true" -%}
+          {% include components/navigationButtons.html %}
+        {% endif %}
         {% include components/footer.html %}
       </div>
     </div>
