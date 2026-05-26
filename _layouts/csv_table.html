@@ -1,0 +1,89 @@
+{% unless csv_table_deps_loaded %}
+{% assign csv_table_deps_loaded = true %}
+<link href="https://unpkg.com/tabulator-tables@6.4.0/dist/css/tabulator.min.css" rel="stylesheet">
+<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://unpkg.com/tabulator-tables@6.4.0/dist/js/tabulator.min.js"></script>
+{% endunless %}
+{% assign _table_id = include.table_id | default: include.csv_path | slugify %}
+{% assign _pagination      = include.pagination_size  | default: 50 %}
+{% assign _height          = include.height           | default: "" %}
+{% assign _sort_col        = include.initial_sort_col | default: "" %}
+{% assign _sort_dir        = include.initial_sort_dir | default: "asc" %}
+{% assign _csv_url = site.baseurl | append: include.csv_path %}
+
+<input id="{{ _table_id }}-search" type="text" placeholder="Search…" style="margin-bottom:0.75rem;padding:0.4rem 0.6rem;width:100%;box-sizing:border-box;font-size:1rem;border:1px solid #ccc;border-radius:4px;">
+<div id="{{ _table_id }}"
+  data-csv="{{ _csv_url }}"
+  data-pagination="{{ _pagination }}"
+  data-height="{{ _height }}"
+  data-sort-col="{{ _sort_col }}"
+  data-sort-dir="{{ _sort_dir }}"></div>
+
+<script>
+(function() {
+  var container     = document.currentScript.previousElementSibling;
+  var tableId       = container.id;
+  var csvUrl        = container.dataset.csv;
+  var paginationSize = parseInt(container.dataset.pagination, 10);
+  var height        = container.dataset.height || false;
+  var sortCol       = container.dataset.sortCol || "";
+  var sortDir       = container.dataset.sortDir || "asc";
+
+  Papa.parse(csvUrl, {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: function(results) {
+      var allData = results.data;
+
+      var urlFormatter = function(cell) {
+        var v = cell.getValue();
+        if (v && /^https?:\/\//i.test(String(v).trim())) {
+          var a = document.createElement("a");
+          a.href = v;
+          a.textContent = v;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          return a;
+        }
+        return v;
+      };
+
+      var tableConfig = {
+        data: allData,
+        autoColumns: true,
+        autoColumnsDefinitions: function(cols) {
+          return cols.map(function(col) {
+            col.formatter = urlFormatter;
+            return col;
+          });
+        },
+        layout: "fitDataStretch",
+        movableColumns: true,
+        placeholder: "No matching records",
+        pagination: true,
+        paginationSize: paginationSize,
+        paginationSizeSelector: [10, 25, 50, 100, true],
+        paginationCounter: "rows",
+      };
+
+      if (height)   { tableConfig.height    = height; }
+      if (sortCol)  { tableConfig.initialSort = [{ column: sortCol, dir: sortDir }]; }
+
+      var table = new Tabulator(container, tableConfig);
+
+      document.getElementById(tableId + "-search").addEventListener("input", function() {
+        var query = this.value.toLowerCase();
+        table.setData(query
+          ? allData.filter(function(row) {
+              return Object.values(row).some(function(v) {
+                return String(v).toLowerCase().indexOf(query) !== -1;
+              });
+            })
+          : allData
+        );
+      });
+    }
+  });
+})();
+</script>
