@@ -44,9 +44,11 @@ Last updated: {{ site.time | date: "%B %d, %Y"}}
     {%- endif -%}
   </p>
 {%- endif -%}
-{%- if site.license_name and site.license_url and site.license_image_url -%}
+{%- unless site.license_disabled -%}
+  {%- if site.license_name and site.license_url and site.license_image_url -%}
 <p><a target="_blank" rel="noopener noreferrer" href="{{ site.license_url }}"><img src="{{ site.license_image_url }}" alt="{{ site.license_name }} icon" style="height:2.5em;"></a></p>
-{%- else -%}
+  {%- else -%}
   <p><a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International icon" style="height:2.5em;"></a></p>
   {%- endif -%}
+{%- endunless -%}
 {%- endif -%}
