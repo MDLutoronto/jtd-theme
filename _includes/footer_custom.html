@@ -1,5 +1,15 @@
+{%- capture ai_training_statement -%}
+  {%- unless site.ai_training_statement_disabled -%}
+    {%- if site.ai_training_statement and site.ai_training_statement != '' -%}
+  <p class="text-small text-grey-dk-100 mb-0">{{ site.ai_training_statement }}</p>
+    {%- else -%}
+  <p class="text-small text-grey-dk-100 mb-0">The content of these tutorials, guides, and any other Map & Data Library pages on our <a target="_blank" rel="noopener noreferrer" href="https://mdlutoronto.github.io/tutorials-search/">Learn@MDL site</a>, shall not be ingested into or used for training of any large language models (or other artificial intelligence/machine learning models) without <a target="_blank" rel="noopener noreferrer" href="https://library.utoronto.ca/contact-us/data-maps">contacting the Map & Data Library for consent first.</a></p>
+    {%- endif -%}
+  {%- endunless -%}
+{%- endcapture -%}
 {%- if site.footer_content -%}
   <p class="text-small text-grey-dk-100 mb-0">{{ site.footer_content }}</p>
+  {{ ai_training_statement }}
 {%- else -%}
 {%- if page.created_date and page.created_date != '' -%}First created: {{ page.created_date | date: "%B %d, %Y" }} <br> {% endif -%}
 Last updated: {{ site.time | date: "%B %d, %Y"}}
@@ -44,6 +54,7 @@ Last updated: {{ site.time | date: "%B %d, %Y"}}
     {%- endif -%}
   </p>
 {%- endif -%}
+{{ ai_training_statement }}
 {%- unless site.license_disabled -%}
   {%- if site.license_name and site.license_url and site.license_image_url -%}
 <p><a target="_blank" rel="noopener noreferrer" href="{{ site.license_url }}"><img src="{{ site.license_image_url }}" alt="{{ site.license_name }} icon" style="height:2.5em;"></a></p>
