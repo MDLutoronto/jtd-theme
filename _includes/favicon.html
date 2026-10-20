@@ -1,7 +1,8 @@
 {%- comment -%}
   Include as: {%- include_cached favicon.html -%}
   Depends on: site.static_files.
-  Results in: HTML for a link to an existing `favicon.ico` file.
+  Results in: HTML for a link to the site's `favicon.ico` if it exists,
+    otherwise to the theme's `/assets/images/favicon.ico`.
   Overwrites: 
     file.
   
@@ -15,9 +16,7 @@
 
 {% for file in site.static_files %}
   {% if file.path == site.favicon_ico or file.path == '/favicon.ico' %}
-    {% assign favicon = true %}
+    {% assign favicon = file.path %}
   {% endif %}
 {% endfor %}
-{% if favicon %}
-  <link rel="icon" href="{{ site.favicon_ico | default: '/favicon.ico' | relative_url }}" type="image/x-icon">
-{% endif %}
+<link rel="icon" href="{{ favicon | default: '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
